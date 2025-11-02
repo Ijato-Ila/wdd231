@@ -1,0 +1,52 @@
+/* normalize.css - simplified version to ensure consistent styling across browsers */
+
+/* Document */
+html {
+  line-height: 1.15; /* Correct line height */
+  -webkit-text-size-adjust: 100%; /* Prevent iOS font size adjustment */
+}
+
+/* Sections */
+body {
+  margin: 0; /* Remove default margin */
+}
+
+/* Text-level semantics */
+a {
+  background-color: transparent; /* Remove link background */
+  text-decoration: none;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+img {
+  border-style: none;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Forms */
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+/* Remove extra spacing on button and input in Firefox */
+button, input {
+  overflow: visible;
+}
+
+/* Remove inner border and padding in Chrome/Safari */
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/* Default box sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}

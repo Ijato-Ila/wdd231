@@ -1,11 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WDD231 Course Home Page for Precious-Jane Okpen">
+  <meta name="author" content="Ijato Precious-Jane Okpen">
+  <title>WDD231 | Course Home Page</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <!-- JS -->
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
 </head>
+
 <body>
-    <h1>WDD 231 - Ijato Okpen</h1>
+  <header>
+    <img src="images/logo.webp" alt="Site Logo" class="logo">
+    <span class="site-name">Ijato Precious-Jane Okpen</span>
+    <button id="menu" aria-label="Menu" aria-expanded="false">&#9776;</button>
+
+    <nav id="navMenu" aria-label="Main Navigation">
+      <a href="index.html" class="active">Home</a>
+      <a href="#">Chamber</a>
+      <a href="#">Final</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Course Home</h1>
+
+    <section>
+      <h2>About This Course</h2>
+      <p>
+        This course explores web development fundamentals using HTML, CSS, and JavaScript.
+        You will learn how to build responsive, accessible, and dynamic web pages.
+      </p>
+    </section>
+
+    <section id="certificate">
+      <h2>Certificate Courses</h2>
+
+      <div id="courseButtons" class="button-group">
+        <button id="allBtn" class="filter-btn active">All</button>
+        <button id="wddBtn" class="filter-btn">WDD</button>
+        <button id="cseBtn" class="filter-btn">CSE</button>
+      </div>
+
+      <div id="coursesContainer" aria-live="polite"></div>
+
+      <p>Total Credits: <strong><span id="totalCredits">0</span></strong></p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Connect with me on GitHub and LinkedIn below!</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social">
+      <a href="https://github.com/ijato-ila" target="_blank" rel="noopener">GitHub</a> |
+      <a href="https://www.linkedin.com/in/ijato-okpen-59321036b/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <p>&copy; <span id="currentyear"></span> Ijato Precious-Jane Okpen | Nigeria</p>
+    <p id="lastModified"></p>
+  </footer>
 </body>
 </html>

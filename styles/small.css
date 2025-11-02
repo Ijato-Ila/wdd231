@@ -1,0 +1,116 @@
+:root {
+  --accent: #ff4eb5c6;
+  --bg: #f9f9f9;
+  --border: #ddd;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background-color: var(--bg);
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--accent);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1rem;
+}
+
+header .site-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+#menu {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+}
+
+nav {
+  display: none;
+  flex-direction: column;
+  background-color: #0057b370;
+}
+
+nav a {
+  color: white;
+  padding: 0.7rem;
+  text-decoration: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+nav a.active {
+  background-color: #003d80;
+}
+
+nav.show {
+  display: flex;
+}
+
+/* Main content */
+main {
+  padding: 1rem;
+}
+
+h1, h2 {
+  color: #222;
+}
+
+.button-group {
+  margin: 1rem 0;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--accent);
+  background-color: white;
+  color: var(--accent);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.filter-btn.active {
+  background-color: var(--accent);
+  color: white;
+}
+
+/* Course cards */
+.course-card {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background-color: white;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.course-card.completed {
+  border-left: 5px solid #08b90d;
+}
+
+.course-card.in-progress {
+  border-left: 5px solid #ffc10773;
+  background-color: #fffbe6;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+footer .social a {
+  color: var(--accent);
+  text-decoration: none;
+}
