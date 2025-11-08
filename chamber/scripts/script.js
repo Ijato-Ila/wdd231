@@ -1,7 +1,7 @@
 // Async function to fetch members from JSON
 async function loadMembers() {
   try {
-    const response = await fetch('chamber/members.json');
+    const response = await fetch('chamber/data/members.json');
     const members = await response.json();
     
     const directory = document.getElementById('directory');
