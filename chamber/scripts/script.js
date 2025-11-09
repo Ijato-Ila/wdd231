@@ -1,12 +1,13 @@
-// Async function to fetch members from JSON
+// Load members from the JSON file
 async function loadMembers() {
   try {
-    const response = await fetch('chamber/data/members.json');
+    const response = await fetch('data/members.json'); // ✅ correct relative path
     const members = await response.json();
-    
+
     const directory = document.getElementById('directory');
     directory.innerHTML = '';
 
+    // Create a card for each business
     members.forEach(member => {
       const card = document.createElement('div');
       card.className = 'business-card';
@@ -27,5 +28,5 @@ async function loadMembers() {
   }
 }
 
-// Call the function to load members on page load
+// Run when page loads
 loadMembers();
