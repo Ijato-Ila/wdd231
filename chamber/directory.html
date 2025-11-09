@@ -6,25 +6,44 @@
   <meta name="author" content="Ijato Precious-Jane Okpen">
   <title>Lagos Chamber Directory | WDD 231</title>
   <meta name="description" content="Connecting and supporting businesses in Lagos, Nigeria.">
-  <link rel="stylesheet" href="styles/style.css">
+  
+  <!-- Favicon -->
   <link rel="icon" href="images/favicon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 
+  <!-- Header -->
   <header>
     <h1>Lagos Chamber of Commerce</h1>
     <p>Connecting and supporting local businesses in Lagos, Nigeria.</p>
   </header>
 
+  <!-- View toggle buttons -->
+  <div class="button-group">
+    <button id="grid-btn" class="filter-btn active">Grid View</button>
+    <button id="list-btn" class="filter-btn">List View</button>
+  </div>
+
+  <!-- Main content -->
   <main>
     <h2>Business Directory</h2>
-    <div id="directory" class="directory"></div>
+    <div id="directory" class="directory grid-view"></div>
   </main>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Lagos Chamber of Commerce | All Rights Reserved</p>
+    <p>&copy; <span id="year"></span> Lagos Chamber of Commerce | All Rights Reserved</p>
   </footer>
 
+  <!-- JavaScript -->
   <script src="scripts/script.js"></script>
 </body>
 </html>

@@ -1,13 +1,20 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background-color: #f8f9fa;
-  color: #333;
+:root {
+  --accent: #fb94d0ce;
+  --bg: #f9f9f9;
+  --border: #ddd;
 }
 
-/* Pink header and footer */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: var(--bg);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header and Footer pink */
 header, footer {
-  background-color: #fb94d0ce;
+  background-color: var(--accent);
   color: rgb(11, 8, 8);
   text-align: center;
   padding: 1rem;
@@ -17,6 +24,7 @@ h1, h2 {
   text-align: center;
 }
 
+/* Directory layout */
 .directory {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -24,19 +32,58 @@ h1, h2 {
   padding: 1rem;
 }
 
+/* Business card */
 .business-card {
   background: white;
   border-radius: 10px;
   padding: 1rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
   text-align: center;
 }
 
-.business-card a {
-  color: #0077cc;
-  text-decoration: none;
+/* Grid/List toggle */
+.directory.list-view {
+  display: flex;
+  flex-direction: column;
 }
 
-.business-card a:hover {
-  text-decoration: underline;
+.directory.list-view .business-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 0.5rem;
+}
+
+@media (min-width: 600px) {
+  .directory.list-view .business-card {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .directory.list-view .business-card > div {
+    flex: 1;
+  }
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.filter-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--accent);
+  background-color: white;
+  color: var(--accent);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.filter-btn.active {
+  background-color: var(--accent);
+  color: white;
 }
