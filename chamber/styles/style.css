@@ -2,6 +2,10 @@
   --accent: #fb94d0ce;
   --bg: #f9f9f9;
   --border: #ddd;
+  --header-footer-text: #0b0808;
+  --text-primary: #333;
+  --button-pink: #ff4eb5;
+  --button-pink-dark: #ff1a75;
 }
 
 body {
