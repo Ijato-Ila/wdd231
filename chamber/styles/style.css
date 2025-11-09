@@ -31,9 +31,12 @@ header nav {
   margin-top: 0.5rem;
 }
 
-header nav a {
-  color: #000000;
+header nav a.active {
+  background-color: #000000;
+  color: white;
   text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
   font-weight: 600;
 }
 
