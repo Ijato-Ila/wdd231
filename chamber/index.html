@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ijato Precious-Jane Okpen">
+    <title>Lagos Chamber of Commerce | Home</title>
+    <meta name="description"
+        content="Welcome to the Lagos Chamber of Commerce. Connect, grow, and discover local opportunities.">
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Lagos Chamber Directory – Connecting Local Businesses | WDD 231">
+    <meta property="og:description"
+        content="Explore and connect with Lagos businesses through our comprehensive Chamber of Commerce directory.">
+    <meta property="og:image" content="https://ijato-ila.github.io/wdd231/chamber/images/favicon.png">
+    <meta property="og:url" content="https://ijato-ila.github.io/wdd231/chamber/index.html">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <p>Connecting and supporting local businesses in Lagos, Nigeria.</p>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <img src="images/hero.jpg" alt="Lagos city skyline" class="hero-img">
+        <a href="join.html" class="cta">Join the Chamber</a>
+    </section>
+
+    <!-- CURRENT EVENTS -->
+    <section class="events">
+        <h2>Current Events</h2>
+        <ul>
+            <li>Lagos Tech Summit – March 20, 2025</li>
+            <li>Small Business Workshop – April 5, 2025</li>
+            <li>Networking Breakfast – April 12, 2025</li>
+        </ul>
+    </section>
+
+    <!-- WEATHER SECTION -->
+    <section class="weather">
+        <h2>Current Weather in Lagos</h2>
+        <p>Temperature: <span id="current-temp"></span></p>
+        <p>Description: <span id="weather-desc"></span></p>
+    </section>
+
+    <!-- SPOTLIGHT SECTION -->
+    <section class="spotlights">
+        <h2>Member Spotlights</h2>
+        <div id="spotlight-container">
+            <!-- Spotlight cards loaded dynamically from members.json -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="year"></span> Lagos Chamber of Commerce | All Rights Reserved</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="scripts/home.js" defer></script>
+</body>
+
+</html>

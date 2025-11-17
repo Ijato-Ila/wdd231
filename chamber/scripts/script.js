@@ -2,7 +2,8 @@
 async function loadMembers() {
   try {
     const response = await fetch('data/members.json');
-    const members = await response.json();
+    const data = await response.json();
+    const members = data.members;
 
     const directory = document.getElementById('directory');
     directory.innerHTML = '';
@@ -12,6 +13,7 @@ async function loadMembers() {
       card.className = 'business-card';
 
       card.innerHTML = `
+      <img src="${member.image}" alt="${member.name}">
         <div>
           <h3>${member.name}</h3>
           <p><strong>Membership Level:</strong> ${member.membershipLevel}</p>

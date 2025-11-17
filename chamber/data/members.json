@@ -1,66 +1,84 @@
-[
-  {
-    "name": "Naija Tech Hub",
-    "address": "24 Allen Avenue, Ikeja, Lagos",
-    "phone": "+234 802 123 4567",
-    "website": "https://naijatechhub.com",
-    "membershipLevel": 3,
-    "description": "An innovation hub supporting startups and small tech firms in Lagos."
-  },
-  {
-    "name": "Jollof Bistro",
-    "address": "12 Awolowo Road, Ikoyi, Lagos",
-    "phone": "+234 803 987 6543",
-    "website": "https://jollofbistro.ng",
-    "membershipLevel": 2,
-    "description": "A modern restaurant serving West African fusion dishes with local ingredients."
-  },
-  {
-    "name": "Green Energy Solutions",
-    "address": "Plot 15 Lekki Phase 1, Lagos",
-    "phone": "+234 701 234 5678",
-    "website": "https://greenenergynaija.com",
-    "membershipLevel": 3,
-    "description": "A renewable energy company focused on affordable solar systems for Lagos homes."
-  },
-  {
-    "name": "Pearl Events & Decor",
-    "address": "17 Victoria Island, Lagos",
-    "phone": "+234 815 998 7766",
-    "website": "https://pearlevents.com.ng",
-    "membershipLevel": 1,
-    "description": "Event planning and decoration services for weddings, corporate events, and more."
-  },
-  {
-    "name": "Skyline Microfinance Bank",
-    "address": "Main Street, Yaba, Lagos",
-    "phone": "+234 818 222 9090",
-    "website": "https://skylinemfb.ng",
-    "membershipLevel": 2,
-    "description": "A local bank empowering entrepreneurs and small business owners in Lagos."
-  },
-  {
-    "name": "AfriPrint Media",
-    "address": "3 Broad Street, Lagos Island, Lagos",
-    "phone": "+234 806 321 2244",
-    "website": "https://afriprintmedia.ng",
-    "membershipLevel": 1,
-    "description": "Printing and digital advertising agency serving Lagos-based SMEs."
-  },
-  {
-    "name": "EcoRide Transport Ltd.",
-    "address": "11 Airport Road, Ikeja, Lagos",
-    "phone": "+234 809 112 7788",
-    "website": "https://ecoride.ng",
-    "membershipLevel": 2,
-    "description": "A sustainable transport company offering eco-friendly ride services across Lagos."
-  },
-  {
-    "name": "Lagos Creative Studio",
-    "address": "21 Freedom Way, Lekki Phase 1, Lagos",
-    "phone": "+234 812 654 3321",
-    "website": "https://lagoscreativestudio.com",
-    "membershipLevel": 3,
-    "description": "A digital media studio specializing in photography, videography, and creative branding for Lagos businesses."
-  }
-]
+{
+  "members": [
+    {
+      "name": "Naija Tech Hub",
+      "address": "24 Allen Avenue, Ikeja, Lagos",
+      "phone": "+234 802 123 4567",
+      "website": "https://naijatechhub.com",
+      "membershipLevel": 3,
+      "membership": "Gold",
+      "description": "An innovation hub supporting startups and small tech firms in Lagos.",
+      "image": "images/naija-tech.jpg"
+    },
+    {
+      "name": "Jollof Bistro",
+      "address": "12 Awolowo Road, Ikoyi, Lagos",
+      "phone": "+234 803 987 6543",
+      "website": "https://jollofbistro.ng",
+      "membershipLevel": 2,
+      "membership": "Silver",
+      "description": "A modern restaurant serving West African fusion dishes with local ingredients.",
+      "image": "images/jollof-bistro.jpg"
+    },
+    {
+      "name": "Green Energy Solutions",
+      "address": "Plot 15 Lekki Phase 1, Lagos",
+      "phone": "+234 701 234 5678",
+      "website": "https://greenenergynaija.com",
+      "membershipLevel": 3,
+      "membership": "Gold",
+      "description": "A renewable energy company focused on affordable solar systems for Lagos homes.",
+      "image": "images/green-energy.jpg"
+    },
+    {
+      "name": "Pearl Events & Decor",
+      "address": "17 Victoria Island, Lagos",
+      "phone": "+234 815 998 7766",
+      "website": "https://pearlevents.com.ng",
+      "membershipLevel": 1,
+      "membership": "Bronze",
+      "description": "Event planning and decoration services for weddings, corporate events, and more.",
+      "image": "images/pearl-events.jpg"
+    },
+    {
+      "name": "Skyline Microfinance Bank",
+      "address": "Main Street, Yaba, Lagos",
+      "phone": "+234 818 222 9090",
+      "website": "https://skylinemfb.ng",
+      "membershipLevel": 2,
+      "membership": "Silver",
+      "description": "A local bank empowering entrepreneurs and small business owners in Lagos.",
+      "image": "images/skyline-bank.jpg"
+    },
+    {
+      "name": "AfriPrint Media",
+      "address": "3 Broad Street, Lagos Island, Lagos",
+      "phone": "+234 806 321 2244",
+      "website": "https://afriprintmedia.ng",
+      "membershipLevel": 1,
+      "membership": "Bronze",
+      "description": "Printing and digital advertising agency serving Lagos-based SMEs.",
+      "image": "images/afriprint.jpg"
+    },
+    {
+      "name": "EcoRide Transport Ltd.",
+      "address": "11 Airport Road, Ikeja, Lagos",
+      "phone": "+234 809 112 7788",
+      "website": "https://ecoride.ng",
+      "membershipLevel": 2,
+      "membership": "Silver",
+      "description": "A sustainable transport company offering eco-friendly ride services across Lagos.",
+      "image": "images/ecoride.jpg"
+    },
+    {
+      "name": "Lagos Creative Studio",
+      "address": "21 Freedom Way, Lekki Phase 1, Lagos",
+      "phone": "+234 812 654 3321",
+      "website": "https://lagoscreativestudio.com",
+      "membershipLevel": 3,
+      "membership": "Gold",
+      "description": "A digital media studio specializing in photography, videography, and creative branding for Lagos businesses.",
+      "image": "images/lagos-creative.jpg"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 :root {
-  --accent: #fd73c495;
+  --accent: #ff54be8a;
   --bg: white;
   --border: #ddd;
 }
@@ -13,7 +13,8 @@ body {
 }
 
 /* Header and Footer pink */
-header, footer {
+header,
+footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,7 +27,7 @@ header, footer {
 
 header nav {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   gap: 1rem;
   margin-top: 0.5rem;
 }
@@ -40,7 +41,8 @@ header nav a.active {
   font-weight: 600;
 }
 
-h1, h2 {
+h1,
+h2 {
   text-align: center;
 }
 
@@ -57,7 +59,7 @@ h1, h2 {
   background: white;
   border-radius: 10px;
   padding: 1rem;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
@@ -81,7 +83,7 @@ h1, h2 {
     justify-content: space-between;
   }
 
-  .directory.list-view .business-card > div {
+  .directory.list-view .business-card>div {
     flex: 1;
   }
 }
@@ -106,4 +108,173 @@ h1, h2 {
 .filter-btn.active {
   background-color: var(--accent);
   color: #000000;
+}
+
+
+
+/* =====================================
+   HOME PAGE STYLES
+   ===================================== */
+
+/* HERO SECTION */
+.hero {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  max-height: 450px;
+}
+
+.hero .cta {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1rem 2rem;
+  background-color: #ff6600;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.3rem;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.hero .cta:hover {
+  background-color: #e65c00;
+  transform: translateX(-50%) scale(1.05);
+}
+
+/* CURRENT EVENTS */
+.events {
+  padding: 2rem 1rem;
+  background-color: #f4f4f4;
+}
+
+.events h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.events ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.events li {
+  background-color: #fff;
+  margin: 0.5rem 0;
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.events li:hover {
+  transform: translateY(-3px);
+}
+
+/* WEATHER SECTION */
+.weather {
+  padding: 2rem 1rem;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #e6f0ff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.weather h2 {
+  margin-bottom: 1rem;
+}
+
+.weather p {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* SPOTLIGHTS */
+.spotlights {
+  padding: 2rem 1rem;
+}
+
+.spotlights h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+#spotlight-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.spotlight-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.spotlight-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.spotlight-card img {
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.spotlight-card h3 {
+  margin: 0.5rem 0;
+  color: #003366;
+}
+
+.spotlight-card p,
+.spotlight-card a {
+  margin: 0.3rem 0;
+  color: #333;
+  text-decoration: none;
+}
+
+.spotlight-card a:hover {
+  text-decoration: underline;
+}
+
+.spotlight-card .level {
+  font-weight: bold;
+  color: #ff6600;
+}
+
+/* RESPONSIVE */
+@media (min-width: 600px) {
+  #spotlight-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  #spotlight-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero-img {
+    max-height: 550px;
+  }
 }
