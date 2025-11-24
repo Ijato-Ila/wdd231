@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="author" content="Ijato Precious-Jane Okpen" />
+  <title>Thank You | Lagos Chamber</title>
+  <meta name="description" content="Thank you for applying to the Lagos Chamber. Summary of your submission." />
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <header>
+    <p>Connecting and supporting local businesses in Lagos, Nigeria.</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="directory.html">Directory</a>
+      <a href="join.html">Join</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Thank you — your application was received</h1>
+
+    <section class="thankyou-summary">
+      <p>Below is a summary of the required information you submitted:</p>
+
+      <dl id="result-list">
+        <!-- JS will insert dt/dd pairs here -->
+      </dl>
+
+      <p><a href="index.html">Return to home</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="yearSummary"></span> Lagos Chamber of Commerce | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    // parse GET parameters and display required fields
+    (function() {
+      const params = new URLSearchParams(window.location.search);
+      const keys = [
+        {key:'firstName', label:'First name'},
+        {key:'lastName', label:'Last name'},
+        {key:'email', label:'Email'},
+        {key:'phone', label:'Mobile phone'},
+        {key:'business', label:'Business / Organization'},
+        {key:'timestamp', label:'Submitted (UTC)'}
+      ];
+      const dl = document.getElementById('result-list');
+      keys.forEach(item => {
+        const dt = document.createElement('dt');
+        dt.textContent = item.label;
+        const dd = document.createElement('dd');
+        const value = params.get(item.key);
+        dd.textContent = value ? decodeURIComponent(value) : '(not provided)';
+        dl.appendChild(dt);
+        dl.appendChild(dd);
+      });
+      const y = document.getElementById('yearSummary');
+      if (y) y.textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
