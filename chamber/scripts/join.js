@@ -3,6 +3,8 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   // 1) populate timestamp
+  console.log('Timestamp:', document.getElementById('timestamp').value);
+
   const ts = document.getElementById('timestamp');
   if (ts) ts.value = new Date().toISOString();
 

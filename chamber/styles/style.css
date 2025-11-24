@@ -280,9 +280,6 @@ h2 {
 }
 
 
-
-
-
 /* ===== join.html specific styles (append to style.css) ===== */
 
 /* visually hidden (screen reader only) */
@@ -290,7 +287,10 @@ h2 {
   position: absolute !important;
   width: 1px; height: 1px;
   padding: 0; margin: -1px;
-  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 /* layout: form + cards */
@@ -340,7 +340,10 @@ h2 {
 }
 
 /* membership cards */
-.membership-cards { margin-top: 1rem; }
+.membership-cards {
+  margin-top: 1rem;
+}
+
 .cards-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -361,7 +364,10 @@ h2 {
   animation: cardIn 600ms forwards;
 }
 
-.card:hover { transform: translateY(-4px); box-shadow: 0 10px 24px rgba(0,0,0,0.09); }
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.09);
+}
 
 /* simple stagger */
 .card:nth-child(1) { animation-delay: 0.08s; }
@@ -383,8 +389,12 @@ h2 {
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  color: #fff; /* overlay default for any accidental text */
 }
-.modal[aria-hidden="false"] { display:flex; }
+
+.modal[aria-hidden="false"] {
+  display: flex;
+}
 
 .modal-content {
   background: #fff;
@@ -395,6 +405,7 @@ h2 {
   max-height: 90vh;
   overflow: auto;
   position: relative;
+  color: #222; /* readable text inside modal */
 }
 
 .modal-close {
@@ -409,16 +420,9 @@ h2 {
 
 /* responsive: on wide screens place cards to right of form */
 @media (min-width: 900px) {
-  .join-layout { grid-template-columns: 1fr 380px; align-items: start; }
+  .join-layout {
+    grid-template-columns: 1fr 380px;
+    align-items: start;
+  }
   .cards-grid { margin: 0; }
 }
-/* Modal overlay contrast fix (keeps modal content dark on white but ensures overlay text contrast) */
-.modal {
-  color: #ffffff; /* default color if any text happens to render directly over the overlay/backdrop */
-}
-
-.modal .modal-content {
-  color: #222; /* main readable dark text inside the white modal box */
-}
-
-
