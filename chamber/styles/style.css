@@ -412,5 +412,13 @@ h2 {
   .join-layout { grid-template-columns: 1fr 380px; align-items: start; }
   .cards-grid { margin: 0; }
 }
+/* Modal overlay contrast fix (keeps modal content dark on white but ensures overlay text contrast) */
+.modal {
+  color: #ffffff; /* default color if any text happens to render directly over the overlay/backdrop */
+}
+
+.modal .modal-content {
+  color: #222; /* main readable dark text inside the white modal box */
+}
 
 
