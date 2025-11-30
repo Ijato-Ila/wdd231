@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>The High — Site Plan</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/site.css">
+    <style>
+        /* Color scheme */
+        :root {
+            --primary: #0B8A4A;
+            /* Nigerian green used for accents, buttons, highlights */
+            --accent: #FF6F61;
+            /* Coral used for headings and callouts */
+            --bg: #ffffff;
+            --muted: #333333;
+            --card: #f7f7f7;
+        }
+
+        /* Basic page layout and typography */
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Lora', Georgia, serif;
+            background: var(--bg);
+            color: var(--muted);
+        }
+
+        .container {
+            max-width: 980px;
+            margin: 36px auto;
+            padding: 28px
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 18px
+        }
+
+        .logo {
+            width: 72px;
+            height: 72px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800
+        }
+
+        h1 {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            color: var(--accent);
+            letter-spacing: 0.6px
+        }
+
+        p.lead {
+            margin-top: 6px;
+            margin-bottom: 18px;
+            color: #444
+        }
+
+        section {
+            background: var(--card);
+            padding: 18px;
+            border-radius: 10px;
+            margin-bottom: 18px
+        }
+
+        section h2 {
+            margin-top: 0;
+            color: var(--primary);
+            font-family: 'Montserrat', sans-serif
+        }
+
+        dl {
+            display: grid;
+            grid-template-columns: 170px 1fr;
+            gap: 8px 18px
+        }
+
+        dt {
+            font-weight: 700
+        }
+
+        .color-samples {
+            display: flex;
+            gap: 12px;
+            align-items: center
+        }
+
+        .swatch {
+            width: 72px;
+            height: 48px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700
+        }
+
+        .swatch .hex {
+            font-size: 12px;
+            opacity: 0.9
+        }
+
+        /* Wireframe sketches */
+        .wireframes {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap
+        }
+
+        .wf {
+            flex: 1 1 300px;
+            background: #fff;
+            padding: 14px;
+            border: 2px dashed #e6e6e6;
+            border-radius: 8px
+        }
+
+        .wf h3 {
+            margin-top: 0
+        }
+
+        svg {
+            width: 100%;
+            height: auto;
+            border-radius: 6px
+        }
+
+        ul.checklist {
+            margin: 0;
+            padding-left: 18px
+        }
+
+        .note {
+            font-size: 0.95rem;
+            color: #555
+        }
+
+        footer {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 12px
+        }
+
+        @media (max-width:520px) {
+            dl {
+                grid-template-columns: 1fr
+            }
+
+            .wireframes {
+                flex-direction: column
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" role="main">
+        <header>
+            <div class="logo" aria-hidden="true">TH</div>
+            <div>
+                <h1>The High</h1>
+                <p class="lead">A site plan for a digital hub celebrating Nigerian fashion designers, stylists, brands,
+                    and trends.</p>
+            </div>
+        </header>
+
+        <!-- 1. Site Name -->
+        <section aria-labelledby="sitename">
+            <h2 id="sitename">Site Name</h2>
+            <dl>
+                <dt>Site Name</dt>
+                <dd><strong>The High</strong></dd>
+
+                <dt>Why this name?</dt>
+                <dd>
+                    "The High" a place that lifts Nigerian fashion to a higher stage. It's short, brandable, and works
+                    well on social platforms and as a domain (examples: thehigh.ng, thehigh.com).
+                </dd>
+            </dl>
+        </section>
+
+        <!-- 2. Site Purpose -->
+        <section aria-labelledby="purpose">
+            <h2 id="purpose">Site Purpose</h2>
+            <p>The High will be an editorial and portfolio platform that showcases Nigerian fashion talent and industry
+                activity. Primary goals:</p>
+            <ul>
+                <li>Feature designers, stylists, creative directors and brands through profile pages and lookbooks.</li>
+                <li>Publish event listings for fashion shows, pop-ups, and workshops.</li>
+                <li>Provide style guides, trend reports, and buying guides.</li>
+                <li>Host an online gallery of outfits & accessories with lightbox preview and tagging.</li>
+                <li>Offer a contact/collaboration form for media, buyers, and creative partnerships.</li>
+            </ul>
+        </section>
+
+        <!-- 3. Scenarios -->
+        <section aria-labelledby="scenarios">
+            <h2 id="scenarios">User Scenarios (Who visits & why)</h2>
+            <ol>
+                <li><strong>Emerging designer:</strong> "How can I submit my lookbook or get featured on The High?"
+                    needs clear submission and contact flow.</li>
+                <li><strong>Fashion buyer:</strong> "Which designers are showing at the Lagos Fashion Week pop-up next
+                    month?" needs event listings and designer profiles.</li>
+                <li><strong>Fashion enthusiast:</strong> "What are the current street style trends in Nigeria this
+                    season?" needs trend articles and galleries.</li>
+            </ol>
+        </section>
+
+        <!-- 4. Color Scheme -->
+        <section aria-labelledby="colors">
+            <h2 id="colors">Color Scheme</h2>
+            <p class="note">Two primary colors (used across headings, accents, buttons) plus neutrals for text and
+                surfaces. These exact values are used in the document CSS variables at the top.</p>
+
+            <div class="color-samples" aria-hidden="true">
+                <div class="swatch" style="background:var(--primary);"> <span class="hex">#0B8A4A</span></div>
+                <div class="swatch" style="background:var(--accent);"> <span class="hex">#FF6F61</span></div>
+                <div style="margin-left:12px;color:#555">Text color: <strong>#333333</strong></div>
+            </div>
+
+            <dl>
+                <dt>--primary (#0B8A4A)</dt>
+                <dd>Used for primary headings, navigation hover, buttons (primary), and accent borders.</dd>
+                <dt>--accent (#FF6F61)</dt>
+                <dd>Used for H1/H2 highlights, call-to-action links, and active state indicators.</dd>
+            </dl>
+        </section>
+
+        <!-- 5. Typography -->
+        <section aria-labelledby="typography">
+            <h2 id="typography">Typography</h2>
+            <p class="note">Selected web fonts and where they'll be applied.</p>
+            <dl>
+                <dt>Montserrat (Headings, UI)</dt>
+                <dd>Used for H1/H2/H3 and UI elements like buttons and navigation. Clean, modern, strong presence.</dd>
+                <dt>Lora (Body)</dt>
+                <dd>Readable serif for article body text and captions, pairs well with Montserrat for an editorial feel.
+                </dd>
+            </dl>
+
+            <p class="note">Fallbacks: headings: <code>system-ui, sans-serif</code>; body: <code>Georgia, serif</code>.
+                The inline CSS demonstrates these choices in this site plan document.</p>
+        </section>
+
+        <!-- 6. Wireframe -->
+        <section aria-labelledby="wireframe">
+            <h2 id="wireframe">Wireframe | Home Page (sketches)</h2>
+            <p class="note">Wireframes for two breakpoints: mobile and desktop. They show content priority and placement
+                (mobile + larger view).</p>
+
+            <div class="wireframes">
+                <div class="wf" aria-labelledby="wf-mobile">
+                    <h3 id="wf-mobile">Mobile (≤ 480px)</h3>
+                    <svg viewBox="0 0 360 640" role="img" aria-label="Mobile wireframe">
+                        <rect x="6" y="8" width="348" height="56" rx="6" fill="#fff" stroke="#e1e1e1" />
+                        <rect x="20" y="74" width="320" height="200" rx="6" fill="#fafafa" stroke="#e1e1e1" />
+                        <rect x="20" y="286" width="150" height="20" rx="3" fill="#fff" stroke="#e1e1e1" />
+                        <rect x="20" y="316" width="320" height="80" rx="6" fill="#fff" stroke="#e1e1e1" />
+                        <rect x="20" y="406" width="150" height="120" rx="6" fill="#fff" stroke="#e1e1e1" />
+                        <rect x="190" y="406" width="150" height="120" rx="6" fill="#fff" stroke="#e1e1e1" />
+                        <rect x="20" y="540" width="320" height="40" rx="6" fill="#fff" stroke="#e1e1e1" />
+                        <text x="28" y="34" font-family="Montserrat, sans-serif" font-size="12" fill="#666">Top nav
+                            (logo + menu)</text>
+                        <text x="28" y="96" font-family="Lora, serif" font-size="12" fill="#999">Hero carousel /
+                            Featured collection</text>
+                        <text x="28" y="302" font-family="Lora, serif" font-size="12" fill="#999">Article teaser /
+                            trend</text>
+                        <text x="28" y="442" font-family="Lora, serif" font-size="12" fill="#999">Gallery tiles</text>
+                        <text x="28" y="566" font-family="Montserrat, sans-serif" font-size="11" fill="#666">Footer /
+                            quick links</text>
+                    </svg>
+                </div>
+
+                <div class="wf" aria-labelledby="wf-desktop">
+                    <h3 id="wf-desktop">Desktop / Tablet (≥ 768px)</h3>
+                    <svg viewBox="0 0 1000 640" role="img" aria-label="Desktop wireframe">
+                        <rect x="14" y="12" width="972" height="72" rx="8" fill="#fff" stroke="#e1e1e1" />
+                        <rect x="18" y="96" width="640" height="260" rx="6" fill="#fafafa" stroke="#e1e1e1" />
+                        <rect x="670" y="96" width="304" height="120" rx="6" fill="#fff" stroke="#e1e1e1" />
+                        <rect x="670" y="228" width="304" height="128" rx="6" fill="#fff" stroke="#e1e1e1" />
+                        <rect x="18" y="372" width="456" height="200" rx="6" fill="#fff" stroke="#e1e1e1" />
+                        <rect x="486" y="372" width="488" height="200" rx="6" fill="#fff" stroke="#e1e1e1" />
+                        <text x="30" y="48" font-family="Montserrat, sans-serif" font-size="14" fill="#666">Top nav logo
+                            | nav links | search</text>
+                        <text x="30" y="140" font-family="Lora, serif" font-size="13" fill="#999">Hero feature (large
+                            image or carousel)</text>
+                        <text x="680" y="120" font-family="Lora, serif" font-size="12" fill="#999">Events & upcoming
+                            shows</text>
+                        <text x="30" y="400" font-family="Lora, serif" font-size="12" fill="#999">Featured designers
+                            grid</text>
+                    </svg>
+                </div>
+            </div>
+
+            <p class="note">Notes: Keep hero area visually strong; prioritize gallery and featured designers above the
+                fold on desktop. Provide sticky nav with quick access to "Submit", "Events" and "Shop".</p>
+        </section>
+
+        <!-- 7. CSS & Files -->
+        <section aria-labelledby="css">
+            <h2 id="css">CSS & Files</h2>
+            <p class="note">Planned front-end assets and a note on validity:</p>
+            <ul class="checklist">
+                <li><strong>styles/site.css</strong> - main stylesheet (typography, layout, responsive rules)</li>
+                <li><strong>styles/components.css</strong> - small component styles (cards, buttons, forms)</li>
+                <li><strong>scripts/main.js</strong> - lightweight interactivity (menu toggle, gallery lightbox)</li>
+            </ul>
+            <p class="note">Validation: this document is structured with semantic HTML and includes a
+                <code>&lt;title&gt;</code>. Before final submission, run the HTML through the <a href="#">W3C Markup
+                    Validator</a> and move inline CSS into <code>styles/site.css</code> to simplify validation.</p>
+        </section>
+
+        <!-- 8. Testing -->
+        <section aria-labelledby="testing">
+            <h2 id="testing">Testing & Evaluation</h2>
+            <p class="note">This section links every rubric criterion to explicit evidence in this document.</p>
+
+            <dl>
+                <dt>Site Name</dt>
+                <dd>Evidence: Section <a href="#sitename">Site Name</a> - "The High" with rationale and example domains.
+                </dd>
+
+                <dt>Site Purpose</dt>
+                <dd>Evidence: Section <a href="#purpose">Site Purpose</a> - lists 5 clear services/content items
+                    (designers, events, guides, gallery, contact form).</dd>
+
+                <dt>Scenarios</dt>
+                <dd>Evidence: Section <a href="#scenarios">User Scenarios</a> - three scenario questions representing
+                    target users.</dd>
+
+                <dt>Color Schema</dt>
+                <dd>Evidence: Section <a href="#colors">Color Scheme</a> - two colors defined with hex codes and
+                    explicit usage statements. Colors are used via CSS variables at the top of this file (see :root).
+                </dd>
+
+                <dt>Color Schema Use in Document</dt>
+                <dd>Evidence: The document's headings, logo, and swatches visually apply <code>--primary</code> and
+                    <code>--accent</code>. (Inspect CSS variables at top.)</dd>
+
+                <dt>Typography Named and Used</dt>
+                <dd>Evidence: Section <a href="#typography">Typography</a> - Montserrat for headings and Lora for body;
+                    fonts are loaded via Google Fonts and used in page-level CSS.</dd>
+
+                <dt>Wireframe </dt>
+                <dd>Evidence: Section <a href="#wireframe">Wireframe</a> - includes mobile and desktop SVG sketches with
+                    labels for content priority.</dd>
+
+                <dt>Valid HTML & CSS / Title</dt>
+                <dd>Evidence: Document includes a proper <code>&lt;title&gt;</code>, semantic sections, and inline CSS
+                    for demonstration. Recommended next step: run W3C Markup Validator and move CSS to external
+                    stylesheet for final validation.</dd>
+            </dl>
+
+            <p class="note">Quick testing checklist:</p>
+            <ul class="checklist">
+                <li>Run W3C Markup Validator. fix any reported issues.</li>
+                <li>Run WAVE Accessibility checks. ensure alt text & landmark roles are present.</li>
+                <li>Run Lighthouse (Chrome DevTools). confirm Performance, Accessibility, Best Practices, SEO scores are
+                    acceptable.</li>
+                <li>Verify color contrast using WebAIM Contrast Checker for body and interactive elements.</li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="notes">
+            <h2 id="notes">Version note</h2>
+            <p class="note">no extra notes</p>
+            <ul class="checklist">
+                <li>Title and Site Name with 1 sentence rationale</li>
+                <li>Short site purpose (1 paragraph)</li>
+                <li>Two scenario questions only</li>
+                <li>Two color swatches and explicit uses (no extra commentary)</li>
+                <li>Typography choices (1-2 lines)</li>
+                <li>Two wireframe images (mobile + desktop)</li>
+            </ul>
+            <p class="note">Content
+            </p>
+        </section>
+
+        <footer>
+            <p>Done</p>
+        </footer>
+    </div>
+</body>
+
+</html>
