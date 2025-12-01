@@ -427,7 +427,19 @@ h2 {
 
 
 
-/* ===== discover.html styles ===== */
+/* discover.html styles */
+
+/* Color variables */
+:root {
+  --color-primary: #003366;
+  --color-secondary: #ff6600;
+  --color-text: #222;
+  --color-text-light: #555;
+  --color-bg-light: #f4f4f4;
+  --color-white: #fff;
+  --color-shadow: rgba(0,0,0,0.06);
+  --color-img-filter-hover: brightness(0.97) saturate(1.02);
+}
 
 /* Page container */
 .discover-page {
@@ -443,8 +455,8 @@ h2 {
   justify-content: space-between;
   gap: 0.5rem;
   padding: 0.75rem;
-  background-color: #f4f4f4;
-  color: #222;
+  background-color: var(--color-bg-light);
+  color: var(--color-text);
   border-radius: 6px;
   margin-bottom: 1rem;
   font-size: 0.95rem;
@@ -467,7 +479,7 @@ h2 {
 }
 
 .visit-close:focus {
-  outline: 3px solid #ff6600;
+  outline: 3px solid var(--color-secondary);
   outline-offset: 2px;
 }
 
@@ -481,10 +493,10 @@ h2 {
 
 /* Card base */
 .discover-card {
-  background: #fff;
+  background: var(--color-white);
   border-radius: 8px;
   padding: 0.6rem;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 14px var(--color-shadow);
   display: grid;
   gap: 0.5rem;
   align-items: start;
@@ -493,7 +505,7 @@ h2 {
 .discover-card h2 {
   margin: 0;
   font-size: 1.05rem;
-  color: #003366;
+  color: var(--color-primary);
 }
 
 .discover-card figure {
@@ -510,19 +522,19 @@ h2 {
 
 .discover-card address {
   font-style: normal;
-  color: #555;
+  color: var(--color-text-light);
   font-size: 0.95rem;
 }
 
 .discover-card p {
   margin: 0.45rem 0;
-  color: #333;
+  color: var(--color-text);
 }
 
 .discover-card .learn-more {
   display: inline-block;
   margin-top: 0.5rem;
-  color: #ff6600;
+  color: var(--color-secondary);
   text-decoration: none;
   font-weight: 600;
 }
@@ -555,7 +567,7 @@ h2 {
   }
   .discover-card:hover img {
     transform: scale(1.03);
-    filter: brightness(0.97) saturate(1.02);
+    filter: var(--color-img-filter-hover);
   }
 }
 
