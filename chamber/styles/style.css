@@ -428,32 +428,51 @@ h2 {
 
 
 /* discover.html styles */
-.discover-page { padding: 1rem; max-width: 1100px; margin: 0 auto; }
-
-.visit-message {
-  margin: 0.6rem 0 1rem;
-  padding: 0.75rem;
-  background-color: #f4f4f4;
-  border-radius: 6px;
-  color: #222;
+.discover-page {
+  padding: 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-/* grid container: small screens use single column named areas */
+/* Visit message box (discover page) */
+.visit-message {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background-color: #f4f4f4;
+  color: #222;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.2;
+}
+
+.visit-close {
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 0.25rem;
+  cursor: pointer;
+  color: #333;
+  border-radius: 4px;
+}
+
+.visit-close:focus {
+  outline: 3px solid #ff6600;
+  outline-offset: 2px;
+}
+
+/* Grid container and cards */
 .discover-grid {
   display: grid;
   gap: 1rem;
   grid-template-areas:
-    "a"
-    "b"
-    "c"
-    "d"
-    "e"
-    "f"
-    "g"
-    "h";
+    "a" "b" "c" "d" "e" "f" "g" "h";
 }
 
-/* card base */
 .discover-card {
   background: #fff;
   border-radius: 8px;
@@ -461,18 +480,53 @@ h2 {
   box-shadow: 0 4px 14px rgba(0,0,0,0.06);
   display: grid;
   gap: 0.5rem;
-  align-items: start;
 }
 
-.discover-card h2 { margin: 0; font-size: 1.05rem; color: #003366; }
-.discover-card figure { margin: 0; }
-.discover-card img { width: 100%; height: auto; display:block; border-radius:6px; }
+.discover-card h2 {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #003366;
+}
 
-/* address, description */
-.discover-card address { font-style: normal; color: #555; font-size: 0.95rem; }
-.discover-card p { margin: 0.45rem 0; color: #333; }
+.discover-card figure {
+  margin: 0;
+}
 
-/* named areas via item classes */
+.discover-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  transition: transform .35s ease, filter .35s ease;
+}
+
+.discover-card address {
+  font-style: normal;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.discover-card p {
+  margin: 0.45rem 0;
+  color: #333;
+}
+
+.discover-card .learn-more {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #ff6600;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.discover-card .learn-more:hover {
+  text-decoration: underline;
+}
+
+#yearDiscover {
+  font-weight: 600;
+}
+
+/* Named grid areas */
 .discover-grid .item-1 { grid-area: a; }
 .discover-grid .item-2 { grid-area: b; }
 .discover-grid .item-3 { grid-area: c; }
@@ -487,10 +541,12 @@ h2 {
   .discover-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-      "a b"
-      "c d"
-      "e f"
-      "g h";
+      "a b" "c d" "e f" "g h";
+  }
+
+  .discover-card:hover img {
+    transform: scale(1.03);
+    filter: brightness(0.97) saturate(1.02);
   }
 }
 
@@ -499,65 +555,13 @@ h2 {
   .discover-grid {
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
-      "a b c d"
-      "e f g h";
+      "a b c d" "e f g h";
   }
 }
 
-/* Image hover effect only on medium and larger screens */
-@media (min-width: 641px) {
-  .discover-card img { transition: transform .35s ease, filter .35s ease; }
-  .discover-card:hover img { transform: scale(1.03); filter: brightness(0.97) saturate(1.02); }
+/* Lazy-loading images */
+.discover-card img[loading="lazy"] {
+  display: block;
+  width: 100%;
+  height: auto;
 }
-
-/* ensure lazy images layout correctly */
-.discover-card img[loading="lazy"] { display:block; width:100%; height:auto; }
-
-/* small spacing tweak for "Learn more" link */
-.discover-card .learn-more {
-  display: inline-block;
-  margin-top: 0.5rem;
-  color: #ff6600;
-  text-decoration: none;
-  font-weight: 600;
-}
-.discover-card .learn-more:hover { text-decoration: underline; }
-
-/* keep footer year consistent */
-#yearDiscover { font-weight: 600; }
-
-/* Visit message box (discover page) */
-.visit-message {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.5rem;
-  padding: 0.6rem 0.75rem;
-  background-color: #f4f4f4;
-  color: #222;
-  border-radius: 6px;
-  margin-bottom: 1rem;
-}
-
-/* Visit text styling */
-.visit-message .visit-text {
-  font-size: 0.95rem;
-  line-height: 1.2;
-}
-
-/* Close button */
-.visit-close {
-  background: transparent;
-  border: none;
-  font-size: 1rem;
-  line-height: 1;
-  padding: 0.25rem;
-  cursor: pointer;
-  color: #333;
-  border-radius: 4px;
-}
-.visit-close:focus {
-  outline: 3px solid #ff6600;
-  outline-offset: 2px;
-}
-
