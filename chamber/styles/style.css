@@ -525,3 +525,39 @@ h2 {
 
 /* keep footer year consistent */
 #yearDiscover { font-weight: 600; }
+
+/* Visit message box (discover page) */
+.visit-message {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.6rem 0.75rem;
+  background-color: #f4f4f4;
+  color: #222;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+/* Visit text styling */
+.visit-message .visit-text {
+  font-size: 0.95rem;
+  line-height: 1.2;
+}
+
+/* Close button */
+.visit-close {
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 0.25rem;
+  cursor: pointer;
+  color: #333;
+  border-radius: 4px;
+}
+.visit-close:focus {
+  outline: 3px solid #ff6600;
+  outline-offset: 2px;
+}
+
