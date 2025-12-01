@@ -427,9 +427,17 @@ h2 {
 
 
 
-/* ===== discover.html styles ===== */
+/* Variables for standard colors */
+:root {
+  --color-primary: #003366;
+  --color-secondary: #ff6600;
+  --color-text: #222;
+  --color-muted: #555;
+  --color-bg: #fff;
+  --color-message-bg: #f4f4f4;
+}
 
-/* Page container */
+/* discover.html container */
 .discover-page {
   padding: 1rem;
   max-width: 1100px;
@@ -443,15 +451,11 @@ h2 {
   justify-content: space-between;
   gap: 0.5rem;
   padding: 0.75rem;
-  background-color: #f4f4f4;
-  color: #222;
+  background-color: var(--color-message-bg);
+  color: var(--color-text);
   border-radius: 6px;
   margin-bottom: 1rem;
   font-size: 0.95rem;
-  line-height: 1.2;
-}
-
-.visit-message .visit-text {
   line-height: 1.2;
 }
 
@@ -467,11 +471,11 @@ h2 {
 }
 
 .visit-close:focus {
-  outline: 3px solid #ff6600;
+  outline: 3px solid var(--color-secondary);
   outline-offset: 2px;
 }
 
-/* Grid container */
+/* Grid container and cards */
 .discover-grid {
   display: grid;
   gap: 1rem;
@@ -479,21 +483,19 @@ h2 {
     "a" "b" "c" "d" "e" "f" "g" "h";
 }
 
-/* Card base */
 .discover-card {
-  background: #fff;
+  background: var(--color-bg);
   border-radius: 8px;
   padding: 0.6rem;
   box-shadow: 0 4px 14px rgba(0,0,0,0.06);
   display: grid;
   gap: 0.5rem;
-  align-items: start;
 }
 
 .discover-card h2 {
   margin: 0;
   font-size: 1.05rem;
-  color: #003366;
+  color: var(--color-primary);
 }
 
 .discover-card figure {
@@ -503,26 +505,25 @@ h2 {
 .discover-card img {
   width: 100%;
   height: auto;
-  display: block;
   border-radius: 6px;
   transition: transform .35s ease, filter .35s ease;
 }
 
 .discover-card address {
   font-style: normal;
-  color: #555;
+  color: var(--color-muted);
   font-size: 0.95rem;
 }
 
 .discover-card p {
   margin: 0.45rem 0;
-  color: #333;
+  color: var(--color-text);
 }
 
 .discover-card .learn-more {
   display: inline-block;
   margin-top: 0.5rem;
-  color: #ff6600;
+  color: var(--color-secondary);
   text-decoration: none;
   font-weight: 600;
 }
@@ -546,7 +547,7 @@ h2 {
 .discover-grid .item-7 { grid-area: g; }
 .discover-grid .item-8 { grid-area: h; }
 
-/* Medium screens: two columns, hover effect on images */
+/* MEDIUM: two columns, hover effects applied */
 @media (min-width: 641px) and (max-width: 1024px) {
   .discover-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -559,13 +560,12 @@ h2 {
   }
 }
 
-/* Large screens: four columns */
+/* LARGE: four columns */
 @media (min-width: 1025px) {
   .discover-grid {
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
-      "a b c d"
-      "e f g h";
+      "a b c d" "e f g h";
   }
 }
 
