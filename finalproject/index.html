@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The High - Home</title>
+  <meta name="description" content="The High - A hub showcasing Nigerian fashion designers, trends and events." />
+  <meta name="author" content="Ijato Precious-jane Okpen" />
+  <meta property="og:title" content="The High | Nigerian Fashion"/>
+  <meta property="og:description" content="Showcasing Nigerian designers, events and trends."/>
+  <meta property="og:url" content="https://ijato-ila.github.io/wdd231/chamber/directory.html"/>
+  <meta property="og:image" content="images/placeholder.jpg"/>
+  <link rel="icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="styles/site.css" />
+  <link rel="stylesheet" href="styles/components.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">TH</div>
+        <div>
+          <a class="brand-title" href="index.html">The High</a>
+          <div class="brand-sub">Nigerian Fashion</div>
+        </div>
+      </div>
+
+      <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false">☰</button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="designers.html">Designers</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="form-result.html" class="visually-hidden">Form results</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="hero" aria-labelledby="hero-title">
+      <h1 id="hero-title">The High — Celebrating Nigerian Fashion</h1>
+      <p class="lead">Profiles, trends, shows, and galleries that spotlight Nigeria’s vibrant fashion scene.</p>
+    </section>
+
+    <section aria-labelledby="featured" class="section">
+      <div class="section-header">
+        <h2 id="featured">Featured Designers</h2>
+        <p class="note">A curated selection from our data set (dynamically loaded).</p>
+      </div>
+
+      <div id="featured-grid" class="designer-grid" aria-live="polite">
+        <!-- JS injects featured designer cards here -->
+      </div>
+      <p class="see-more"><a href="designers.html">See all designers →</a></p>
+    </section>
+
+    <section aria-labelledby="upcoming" class="section">
+      <div class="section-header">
+        <h2 id="upcoming">Upcoming Events</h2>
+      </div>
+      <div id="events-list" class="events-list" aria-live="polite">
+        <!-- JS injects events -->
+      </div>
+      <p class="see-more"><a href="events.html">View all events →</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div>&copy; <span id="year"></span> The High — Nigerian Fashion</div>
+      <div>
+        <a href="https://youtu.be/YOUR_VIDEO_LINK" target="_blank" rel="noopener">Project Video</a> |
+        <a href="attributions.html">Attributions</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Accessible modal root -->
+  <div id="modal" class="modal" role="dialog" aria-hidden="true" aria-labelledby="modal-title" aria-describedby="modal-desc"></div>
+
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>

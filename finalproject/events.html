@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>The High - Events</title>
+  <meta name="description" content="Upcoming fashion shows and events in Nigeria."/>
+  <meta name="author" content="Ijato Precious-jane Okpen"/>
+  <link rel="icon" href="images/favicon.ico"/>
+  <link rel="stylesheet" href="styles/site.css"/>
+  <link rel="stylesheet" href="styles/components.css"/>
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">TH</div>
+        <div><a class="brand-title" href="index.html">The High</a></div>
+      </div>
+
+      <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false">☰</button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="designers.html">Designers</a></li>
+          <li><a class="active" href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="section">
+      <div class="section-header">
+        <h1>Upcoming Events</h1>
+        <p class="note">Events are loaded from a JSON file and displayed dynamically.</p>
+      </div>
+
+      <div id="events-grid" class="events-grid" aria-live="polite">
+        <!-- JS injects events here -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div>&copy; <span id="year3"></span> The High</div>
+    </div>
+  </footer>
+
+  <div id="modal" class="modal" role="dialog" aria-hidden="true" aria-labelledby="modal-title" aria-describedby="modal-desc"></div>
+
+  <script type="module" src="scripts/events-page.js"></script>
+</body>
+</html>

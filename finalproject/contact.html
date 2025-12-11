@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Contact - The High</title>
+  <meta name="description" content="Contact The High | submit collaboration and press inquiries."/>
+  <meta name="author" content="Ijato Precious-jane OKpen"/>
+  <link rel="icon" href="images/favicon.ico"/>
+  <link rel="stylesheet" href="styles/site.css"/>
+  <link rel="stylesheet" href="styles/components.css"/>
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">TH</div>
+        <div><a class="brand-title" href="index.html">The High</a></div>
+      </div>
+
+      <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false">☰</button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="designers.html">Designers</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h1>Contact & Collaboration</h1>
+      <p class="note">Use this form to submit press, collaboration, or event notices. Form posts to a form action page which displays the entries.</p>
+
+      <form id="contact-form" action="form-result.html" method="get" class="contact-form" novalidate>
+        <label for="name">Full name</label>
+        <input id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="subject">Subject</label>
+        <input id="subject" name="subject" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <fieldset>
+          <legend>Are you a designer or a buyer?</legend>
+          <label><input type="radio" name="type" value="designer" required> Designer</label>
+          <label><input type="radio" name="type" value="buyer"> Buyer</label>
+          <label><input type="radio" name="type" value="press"> Press</label>
+        </fieldset>
+
+        <label for="subscribe"><input id="subscribe" name="subscribe" type="checkbox" value="yes"> Subscribe to newsletter</label>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div>&copy; <span id="year4"></span> The High</div>
+    </div>
+  </footer>
+
+  <script type="module" src="scripts/form.js"></script>
+</body>
+</html>

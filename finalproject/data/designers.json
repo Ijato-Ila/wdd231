@@ -1,0 +1,18 @@
+[
+  {"id":1,"name":"Cynthia Abila","bio":"Contemporary silhouettes with traditional weaving.","image":"images/designer-1.webp","instagram":"https://instagram.com/abila.af","location":"Abuja","established":2016,"signature":"Handwoven fabrics"},
+  {"id":2,"name":"Born in Africa","bio":"Minimalist tailoring with African textures.","image":"images/designer-2.webp","instagram":"https://instagram.com/eliekuame.k","location":"Lagos","established":2018,"signature":"Minimal tailoring"},
+  {"id":3,"name":"Efe Studio","bio":"Gender-fluid streetwear with bold colourways.","image":"images/designer-3.webp","instagram":"https://instagram.com/efestudio","location":"Port Harcourt","established":2020,"signature":"Streetwear"},
+  {"id":4,"name":"Fola M","bio":"Luxury eveningwear blending lace and beads.","image":"images/designer-4.webp","instagram":"https://instagram.com/folam","location":"Lagos","established":2010,"signature":"Eveningwear"},
+  {"id":5,"name":"Gbenga Atelier","bio":"Couture-level craftsmanship & embroidery.","image":"images/designer-5.webp","instagram":"https://instagram.com/gbenga.atelier","location":"Ikeja","established":2008,"signature":"Embroidery"},
+  {"id":6,"name":"Hannah O.","bio":"Slow fashion: ethically made wardrobes.","image":"images/designer-6.webp","instagram":"https://instagram.com/hannah.official","location":"Lagos","established":2019,"signature":"Sustainable"},
+  {"id":7,"name":"Iyabo Collective","bio":"Collective of designers focusing on accessories.","image":"images/designer-7.webp","instagram":"https://instagram.com/iyabocollective","location":"Enugu","established":2015,"signature":"Accessories"},
+  {"id":8,"name":"Jide Atelier","bio":"Tailored menswear with modern cuts.","image":"images/designer-8.webp","instagram":"https://instagram.com/jideatelier","location":"Lagos","established":2005,"signature":"Mens tailoring"},
+  {"id":9,"name":"Kemi Designs","bio":"Contemporary bridal wear with African flair.","image":"images/designer-9.webp","instagram":"https://instagram.com/kemidesigns","location":"Ibadan","established":2014,"signature":"Bridal"},
+  {"id":10,"name":"Lagos Loom","bio":"Textile-focused studio producing signature prints.","image":"images/designer-10.webp","instagram":"https://instagram.com/lagosloom","location":"Lagos","established":2011,"signature":"Prints"},
+  {"id":11,"name":"Musa & Co","bio":"Young designers mixing denim and traditional cuts.","image":"images/designer-11.webp","instagram":"https://instagram.com/musaandco","location":"Kaduna","established":2017,"signature":"Denim"},
+  {"id":12,"name":"Nneka Studio","bio":"Artisanal dyes and natural fibers.","image":"images/designer-12.webp","instagram":"https://instagram.com/nnekastudio","location":"Owerri","established":2013,"signature":"Natural dyes"},
+  {"id":13,"name":"Olu Fashion","bio":"Bold runway collections with dramatic silhouettes.","image":"images/designer-13.webp","instagram":"https://instagram.com/olufashion","location":"Lagos","established":2009,"signature":"Runway"},
+  {"id":14,"name":"Pemi Works","bio":"Street-to-formal hybrids and wearable art.","image":"images/designer-14.webp","instagram":"https://instagram.com/pemiworks","location":"Lagos","established":2021,"signature":"Wearable art"},
+  {"id":15,"name":"Chaos Inc.","bio":"Contemporary fashion brand blending bold silhouettes with clean minimalism.","image":"images/designer-15.webp","instagram":"#","location":"Nigeria","established":2020,"signature":"Modern African luxury"},
+  {"id":16,"name":"Malite","bio":"Explores understated elegance through refined cuts and monochrome palettes.","image":"images/designer-16.webp","instagram":"#","location":"Nigeria","established":2018,"signature":"Wearable high fashion"}
+]

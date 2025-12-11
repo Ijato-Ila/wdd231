@@ -1,0 +1,7 @@
+[
+  {"id":1,"title":"Lagos Fashion Week - Pop-up","date":"2025-02-17","venue":"Victoria Island Expo","description":"A curated pop-up with emerging Lagos designers.","tickets":"Free"},
+  {"id":2,"title":"Designers Forum: Textile talk","date":"2025-03-05","venue":"National Theatre","description":"Panels on sustainable textiles and supply chains.","tickets":"NGN 2,500"},
+  {"id":3,"title":"Street Style Tour - Abuja","date":"2025-04-12","venue":"Wuse Market","description":"Street photography + live styling.","tickets":"NGN 5000"},
+  {"id":4,"title":"Bridal Showcase - Ibadan","date":"2025-05-18","venue":"Grand Hall","description":"Bridal collections from top designers.","tickets":"NGN 5,000"},
+  {"id":5,"title":"Accessory Lab Workshop","date":"2025-06-22","venue":"Enugu Creative Hub","description":"Hands-on accessories workshop.","tickets":"NGN 1,500"}
+]

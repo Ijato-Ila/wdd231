@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>The High | Designers</title>
+  <meta name="description" content="Profiles of Nigerian fashion designers and their collections."/>
+  <meta name="author" content="Ijato Precious-jane Okpen"/>
+  <link rel="icon" href="images/favicon.ico"/>
+  <link rel="stylesheet" href="styles/site.css"/>
+  <link rel="stylesheet" href="styles/components.css"/>
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">TH</div>
+        <div><a class="brand-title" href="index.html">The High</a></div>
+      </div>
+
+      <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false">☰</button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="designers.html">Designers</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="section">
+      <div class="section-header">
+        <h1>Designers</h1>
+        <p class="note">Explore designers | click a card for details. Use the heart to save favorites (localStorage).</p>
+      </div>
+
+      <div class="controls">
+        <label for="filter-country">Filter by city:</label>
+        <select id="filter-country" aria-controls="designers-grid">
+          <option value="all">All</option>
+        </select>
+        <button id="show-favorites">Show favorites</button>
+        <button id="clear-favorites">Clear favorites</button>
+      </div>
+
+      <div id="designers-grid" class="designer-grid" tabindex="0" aria-live="polite">
+        <!-- JS injects 15+ designer cards here -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div>&copy; <span id="year2"></span> The High</div>
+      <div><a href="https://youtu.be/YOUR_VIDEO_LINK" target="_blank" rel="noopener">Project Video</a></div>
+    </div>
+  </footer>
+
+  <div id="modal" class="modal" role="dialog" aria-hidden="true" aria-labelledby="modal-title" aria-describedby="modal-desc"></div>
+
+  <script type="module" src="scripts/designers-page.js"></script>
+</body>
+</html>

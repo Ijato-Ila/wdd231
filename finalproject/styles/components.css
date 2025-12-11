@@ -1,0 +1,11 @@
+/* components.css - small components */
+
+.designer-card .meta,.events-card .meta{color:#777;font-size:0.88rem}
+.designer-card .actions{display:flex;gap:8px;margin-top:8px;align-items:center}
+.favorite-btn{background:none;border:1px solid #ddd;padding:6px;border-radius:6px;cursor:pointer}
+.favorite-btn.is-fav{border-color:var(--accent);color:var(--accent)}
+.see-more{margin-top:8px}
+.form-results{background:#fff;padding:14px;border-radius:8px}
+.controls button{background:#fff;color:var(--primary);border:1px solid var(--primary);padding:8px;border-radius:6px}
+.controls button:hover{background:var(--primary);color:#fff}
+.events-card .date{font-weight:700;color:var(--primary)}
